@@ -1,0 +1,14 @@
+{
+    "config": {
+        "extends": "markdownlint/style/prettier",
+        "list-marker-space": {
+            "ul_multi": 3,
+            "ul_single": 3
+        },
+        "ul-indent": {
+            "indent": 4
+        },
+        "MD033": false,
+        "MD034": false
+    }
+}
