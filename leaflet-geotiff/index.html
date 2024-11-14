@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaflet, geotiffjs y COG</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+    />
+    <link rel="stylesheet" href="main.css"
+
+  </head>
+  <body>
+    <div class="container">
+      <div id="map"></div>
+      <section id="value-display" class="value-display">
+          <h2>Map Click Data</h2>
+          <p><strong>Original Point:</strong> <span id="original-point">--</span></p>
+          <p><strong>Reprojected Point:</strong> <span id="reprojected-point">--</span></p>
+          <p><strong>Pixel Coordinates:</strong> <span id="pixel-coords">--</span></p>
+          <p><strong>Value:</strong> <span id="value-result">--</span></p>
+      </section>
+  </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.14.0/proj4.min.js"
+      integrity="sha512-kkE7QT2Euw7AikzIQYTny96ugX8rFaw9JajrBlGkI0Eo0uOXa8Ki4t4E0I4TYjcjxWvyp21z8+Gv/5DEkhisrg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/geotiff@2.1.3/dist-browser/geotiff.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
